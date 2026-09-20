@@ -6,15 +6,9 @@ public class ObstacleSpawner : MonoBehaviour
     [SerializeField] private GameObject Enemy;
     private float PositionRAndomX;
     private float PositionRAndomy;
-    private float CDEnemy=1f;
+    public float CDEnemy=1f;
     private float Timer;
-    //Instantiate(objeto, posicion, rotacion);
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    
     void Update()
     {
         PositionRAndomX= Random.Range(12,30);

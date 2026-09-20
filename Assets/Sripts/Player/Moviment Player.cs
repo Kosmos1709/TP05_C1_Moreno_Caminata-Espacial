@@ -39,10 +39,5 @@ public class MovimentPlayer : MonoBehaviour
         
     }
 
-
-
-    void Update()
-    {
-
-    }
+ 
 }
