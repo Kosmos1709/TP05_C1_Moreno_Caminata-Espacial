@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 4150826966683020343}
   - component: {fileID: -5506418636394263062}
   - component: {fileID: 4495152359866708709}
+  - component: {fileID: -964357390355443532}
   - component: {fileID: 2350664984479673435}
   - component: {fileID: 284647787533947091}
   - component: {fileID: 8818156456644643004}
   - component: {fileID: 6984133178226000057}
-  - component: {fileID: -964357390355443532}
   m_Layer: 0
   m_Name: Power More speed
   m_TagString: Untagged
@@ -50,10 +50,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d5143ec1e6e404ea43d3d75f7c4e7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PoweUpBuff
-  time: 10
-  movimentleft: {fileID: 0}
-  powerupspawner: {fileID: 0}
-  obstaclespawner: {fileID: 0}
+  RB: {fileID: 0}
+  CountDown: 10
 --- !u!114 &4495152359866708709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68,6 +66,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Movimentleftinloop
   Object: {fileID: 7815667247855062262}
   speed: 5
+--- !u!114 &-964357390355443532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7815667247855062262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c7376cee8d8a494da576e88a52649fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PowerUpDestroyContact
+  PowerUp: {fileID: 7815667247855062262}
 --- !u!114 &2350664984479673435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,16 +224,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &-964357390355443532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7815667247855062262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7376cee8d8a494da576e88a52649fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PowerUpDestroyContact
-  PowerUp: {fileID: 7815667247855062262}

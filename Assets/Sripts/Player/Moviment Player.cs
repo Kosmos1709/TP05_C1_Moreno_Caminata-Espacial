@@ -8,12 +8,14 @@ public class MovimentPlayer : MonoBehaviour
     [SerializeField] private GameObject EndWall;
     [SerializeField] private GameObject Floor;
     [SerializeField] private float speedjump = 10f;
+    BuffinPlayer player;
 
 
 
     void Start()
     {
         RB.GetComponent<Rigidbody2D>();
+        player=GetComponent<BuffinPlayer>();
     }
 
 
@@ -21,7 +23,7 @@ public class MovimentPlayer : MonoBehaviour
     {
         if(collision.gameObject == EndWall)
         {
-            Time.timeScale = 0f;
+            player.DIE();
         }
     }
     
