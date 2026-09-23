@@ -2,8 +2,13 @@ using UnityEngine;
 
 public class BuffinPlayer : MonoBehaviour
 {
+    [Header("Invincible")]
+    Invincible5sec invicible;
+    [SerializeField]private float Secons5 = 5f;
+    [SerializeField] private Collider2D Col;
+
     [Header ("Extralife")]
-    public int ExLife = 0;
+    public int ExLife ;
     public Vector2 RespawnPosition;
 
     [Header("SlowMotion")]
@@ -12,6 +17,7 @@ public class BuffinPlayer : MonoBehaviour
 
     void Start()
     {
+        invicible=GetComponent<Invincible5sec>();
         RespawnPosition = transform.position;
     }
     public void ActivateBuff()
@@ -33,17 +39,32 @@ public class BuffinPlayer : MonoBehaviour
                 activeBuffSlow = false;
             }
         }
+        ////// INVINCIBLE ///////
+        if (invicible.ActiveInvicible)
+        {
+            Secons5 -= Time.deltaTime;
+            if (Secons5>=0)
+            {
+                Col.isTrigger = true;
+            }
+            if (Secons5 <= 0)
+            {
+                Col.isTrigger = false;
+            }
+        }
     }
 
     //////ADD life////////
     public void AddLife()
     {
         ExLife++;
+
     }
     public void DIE()
     {
         if (ExLife > 0)
         {
+            Debug.Log("New LIFE");
             ExLife--;
 
             // Reinicia posición
@@ -61,4 +82,7 @@ public class BuffinPlayer : MonoBehaviour
             Time.timeScale = 0;
         }
     }
+    
+    
+    
 }

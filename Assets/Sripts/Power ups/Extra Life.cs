@@ -10,7 +10,7 @@ public class ExtraLife : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Finish"))
+        if (collision.CompareTag("Player"))
         {
             BuffinPlayer player = collision.GetComponent<BuffinPlayer>();
 
@@ -19,6 +19,7 @@ public class ExtraLife : MonoBehaviour
                 player.AddLife();
             }
 
+                Debug.Log("Extra Life GET");
             Destroy(gameObject);
         }
     }
