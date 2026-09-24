@@ -3,10 +3,6 @@ using UnityEngine;
 public class PoweUpBuff : MonoBehaviour
 {
     public Rigidbody2D RB;
-    [SerializeField] private float CountDown = 10f;
-
-
-
 
     void Start()
     {

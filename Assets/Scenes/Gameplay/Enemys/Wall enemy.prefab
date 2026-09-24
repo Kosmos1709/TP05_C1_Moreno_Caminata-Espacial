@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5282660449255417920}
+  - component: {fileID: -7661035569591976277}
   - component: {fileID: 8778435251985195507}
   - component: {fileID: 5625232968821101169}
   - component: {fileID: 5085216302786121024}
@@ -36,6 +37,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-7661035569591976277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156737365271585336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de71fcfd75c835542bf1edb856f65a76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InvincibleBuffActive
+  Secons5: 5
+  Col: {fileID: 5405523201801841801}
+  sr: {fileID: 5085216302786121024}
 --- !u!114 &8778435251985195507
 MonoBehaviour:
   m_ObjectHideFlags: 0

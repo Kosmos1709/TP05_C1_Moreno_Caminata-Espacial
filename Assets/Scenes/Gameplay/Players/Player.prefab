@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3802335272015414427}
-  - component: {fileID: 4200366912297553053}
+  - component: {fileID: 3312981637937380677}
   - component: {fileID: 6180650865756167432}
   - component: {fileID: 3000997774934025758}
   - component: {fileID: 8008796319450338848}
@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4913786621815464533}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,27 +30,32 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4546411265969631654}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.55, y: -0.42, z: 0}
   m_LocalScale: {x: 0.47, y: 0.4161, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4200366912297553053
+--- !u!114 &3312981637937380677
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4546411265969631654}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a475581ecd060fc4d9fab1736b9c34d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 2dcf6ca340a0e6747b6520652e323da4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TimeScaleGlobal
-  Timescale: 0
-  PauseMenu: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::BuffinPlayer
+  invicible: {fileID: 6229427356194816472, guid: ecbb81447c5ddb648809c9ca3b4178e0, type: 3}
+  Secons5: 5
+  Col: {fileID: 8008796319450338848}
+  ExLife: 0
+  RespawnPosition: {x: 0, y: 0}
+  activeBuffSlow: 0
+  countDown: 0
 --- !u!114 &6180650865756167432
 MonoBehaviour:
   m_ObjectHideFlags: 0

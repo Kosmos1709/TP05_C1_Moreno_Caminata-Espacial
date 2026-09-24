@@ -17,11 +17,11 @@ public class Clocker : MonoBehaviour
         if (Time.timeScale > 0)
         {
             Clock += Time.deltaTime;
-            int minutos = Mathf.FloorToInt(Clock / 60);
-            int segundos = Mathf.FloorToInt(Clock % 60);
+            int minutes = Mathf.FloorToInt(Clock / 60);
+            int seconds = Mathf.FloorToInt(Clock % 60);
 
             // Muestra el texto formateado (ej. 01:05)
-            Chronometerro.text = string.Format("{0:00}:{1:00}", minutos, segundos);
+            Chronometerro.text = string.Format("{0:00}:{1:00}", minutes, seconds);
         }
     }
 }

@@ -9,11 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4441267292294236414}
-  - component: {fileID: 6191140621459539115}
   - component: {fileID: 6229427356194816472}
   - component: {fileID: 263999211366298604}
   - component: {fileID: 2128927818048721705}
   - component: {fileID: -5361123850679301560}
+  - component: {fileID: 6191140621459539115}
+  - component: {fileID: 4228855449407126292}
+  - component: {fileID: 7494066785480924289}
   m_Layer: 0
   m_Name: Power Invincible
   m_TagString: Untagged
@@ -36,6 +38,61 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6229427356194816472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8034116040181667686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3e1ee8346f0a814dac6880cfb85bd48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Invincible5sec
+  ActiveInvicible: 0
+  buff: {fileID: -7661035569591976277, guid: 4199c0f1b5fc4ba44be669edfa3cc97d, type: 3}
+  RB: {fileID: 0}
+--- !u!114 &263999211366298604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8034116040181667686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d2035c9e2d3b254aa1d2187b711fb73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Movimentleftinloop
+  Object: {fileID: 6072577062880450940, guid: fef6f84400ebe964a9e100737c5e9b7c, type: 3}
+  speed: 5
+--- !u!114 &2128927818048721705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8034116040181667686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c7376cee8d8a494da576e88a52649fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PowerUpDestroyContact
+  PowerUp: {fileID: 6072577062880450940, guid: fef6f84400ebe964a9e100737c5e9b7c, type: 3}
+--- !u!114 &-5361123850679301560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8034116040181667686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb4b93f55a7e934eb488ad9900d9c17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestructionWallEnemy
+  Object: {fileID: 8034116040181667686}
 --- !u!212 &6191140621459539115
 SpriteRenderer:
   serializedVersion: 2
@@ -95,55 +152,76 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &6229427356194816472
-MonoBehaviour:
+--- !u!50 &4228855449407126292
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8034116040181667686}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
+--- !u!61 &7494066785480924289
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8034116040181667686}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3e1ee8346f0a814dac6880cfb85bd48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Invincible5sec
---- !u!114 &263999211366298604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8034116040181667686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d2035c9e2d3b254aa1d2187b711fb73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Movimentleftinloop
-  Object: {fileID: 6072577062880450940, guid: fef6f84400ebe964a9e100737c5e9b7c, type: 3}
-  speed: 5
---- !u!114 &2128927818048721705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8034116040181667686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7376cee8d8a494da576e88a52649fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PowerUpDestroyContact
-  PowerUp: {fileID: 6072577062880450940, guid: fef6f84400ebe964a9e100737c5e9b7c, type: 3}
---- !u!114 &-5361123850679301560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8034116040181667686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fb4b93f55a7e934eb488ad9900d9c17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DestructionWallEnemy
-  Object: {fileID: 6072577062880450940, guid: fef6f84400ebe964a9e100737c5e9b7c, type: 3}
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0.21133333}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0

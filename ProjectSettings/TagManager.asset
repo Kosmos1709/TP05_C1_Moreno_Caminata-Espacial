@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Power Ups +1 life
+  - wall enemy
   layers:
   - Default
   - TransparentFX
