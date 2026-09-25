@@ -26,7 +26,7 @@ public class InvincibleBuffActive : MonoBehaviour
         if (Col.isTrigger)
         {
             Secons5 -= Time.deltaTime;
-            sr.color = Color.red;
+            sr.color = Color.green;
             if (Secons5 <= 0)
             {
                 Col.isTrigger = false;

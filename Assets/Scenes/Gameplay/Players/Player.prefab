@@ -49,9 +49,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dcf6ca340a0e6747b6520652e323da4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BuffinPlayer
-  invicible: {fileID: 6229427356194816472, guid: ecbb81447c5ddb648809c9ca3b4178e0, type: 3}
-  Secons5: 5
-  Col: {fileID: 8008796319450338848}
   ExLife: 0
   RespawnPosition: {x: 0, y: 0}
   activeBuffSlow: 0
@@ -127,7 +124,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.32, y: 5.44}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -171,7 +168,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 3.32, y: 5.44}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 3.32, y: 5.44}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0

@@ -12,7 +12,7 @@ public class loopFloor : MonoBehaviour
     {
         if (transform.position.x <= -19f)
         {
-            Floor.transform.position = new Vector2(36, -5);
+            Floor.transform.position = new Vector2(36, 0);
 
         }
     }

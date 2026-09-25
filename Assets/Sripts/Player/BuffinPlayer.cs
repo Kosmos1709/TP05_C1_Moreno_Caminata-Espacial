@@ -19,7 +19,7 @@ public class BuffinPlayer : MonoBehaviour
     public void ActivateBuff()
     {
         activeBuffSlow = true;
-        countDown = 5f;
+        countDown = 2.5f;
         Time.timeScale = 0.5f;
     }
 
