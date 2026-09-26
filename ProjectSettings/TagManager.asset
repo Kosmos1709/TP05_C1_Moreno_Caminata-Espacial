@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Power Ups +1 life
   - wall enemy
+  - Floor
   layers:
   - Default
   - TransparentFX
