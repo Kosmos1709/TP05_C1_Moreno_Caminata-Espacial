@@ -9,9 +9,12 @@ public class MenuAccion : MonoBehaviour
     [SerializeField] private Button BtnStart;
     [SerializeField] private Button BtnVolume;
     [SerializeField] private Button BtnCredits;
+    [SerializeField] private Button BtnHTP;
 
     [SerializeField] private GameObject PanelVolume;
     [SerializeField] private GameObject PanelCredits;
+    [SerializeField] private GameObject PanelHTP;
+
 
 
 
@@ -20,6 +23,7 @@ public class MenuAccion : MonoBehaviour
         BtnStart.onClick.AddListener(OnButtonStartClick);
         BtnVolume.onClick.AddListener(OnButtonVolumeClick);
         BtnCredits.onClick.AddListener(OnButtonCreditsClick);
+        BtnHTP.onClick.AddListener(OnButtonHTPClick);
 
 
     }
@@ -28,8 +32,7 @@ public class MenuAccion : MonoBehaviour
         BtnStart.onClick.RemoveAllListeners();
         BtnVolume.onClick.RemoveAllListeners();
         BtnCredits.onClick.RemoveAllListeners();
-
-
+        BtnHTP.onClick.RemoveAllListeners();
     }
 
 
@@ -46,13 +49,10 @@ public class MenuAccion : MonoBehaviour
         PanelCredits.SetActive(!PanelCredits.activeSelf);
 
     }
-    void Start()
+    private void OnButtonHTPClick()
     {
-        
+        PanelHTP.SetActive(!PanelHTP.activeSelf);
+
     }
 
-    void Update()
-    {
-        
-    }
 }

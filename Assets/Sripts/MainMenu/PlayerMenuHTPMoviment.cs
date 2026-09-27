@@ -1,6 +1,8 @@
 using UnityEngine;
-public class MovimentPlayer : MonoBehaviour
+
+public class PlayerMenuHTPMoviment : MonoBehaviour
 {
+
     [Header("Keys")]
     [SerializeField] private KeyCode jump;
 
@@ -9,38 +11,23 @@ public class MovimentPlayer : MonoBehaviour
     [SerializeField] private Animator animator;
 
     [Header("Game Objects")]
-    [SerializeField] private GameObject EndWall;
     [SerializeField] private GameObject Floor;
 
     [Header("Var")]
     [SerializeField] private float speedjump = 10f;
     [SerializeField] private bool touchFloor = false;
 
-    BuffinPlayer player;
-
-
-
     void Start()
     {
-        RB=GetComponent<Rigidbody2D>();
-        player = GetComponent<BuffinPlayer>();
+        RB = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-    }
-
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject == EndWall)
-        {
-            player.DIE();
-        }
     }
     private void Update()
     {
-        if (Input.GetKeyDown(jump) )
+        if (Input.GetKeyDown(jump))
         {
             touchFloor = false;
-            animator.SetBool("InFloor",touchFloor);
+            animator.SetBool("InFloor", touchFloor);
         }
         if (Input.GetKeyUp(jump))
         {
@@ -48,8 +35,6 @@ public class MovimentPlayer : MonoBehaviour
             animator.SetBool("InFloor", touchFloor);
         }
     }
-
-
     private void FixedUpdate()
     {
         if (Input.GetKey(jump))
@@ -58,6 +43,4 @@ public class MovimentPlayer : MonoBehaviour
         }
 
     }
-
- 
 }

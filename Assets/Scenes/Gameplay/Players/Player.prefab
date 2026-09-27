@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8008796319450338848}
   - component: {fileID: 8617328842818957527}
   - component: {fileID: 4913786621815464533}
+  - component: {fileID: 3093065724729596223}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -32,7 +33,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.55, y: -0.42, z: 0}
-  m_LocalScale: {x: 0.47, y: 0.4161, z: 1}
+  m_LocalScale: {x: 0.46, y: 0.4161, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -52,7 +53,7 @@ MonoBehaviour:
   ExLife: 0
   RespawnPosition: {x: 0, y: 0}
   activeBuffSlow: 0
-  countDown: 0
+  countDown: 3
 --- !u!114 &6180650865756167432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,9 +68,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MovimentPlayer
   jump: 32
   RB: {fileID: 8617328842818957527}
+  animator: {fileID: 3093065724729596223}
   EndWall: {fileID: 0}
   Floor: {fileID: 838463166030040372, guid: 62cc1083f223b354aa9e952d1b0a7720, type: 3}
   speedjump: 11
+  touchFloor: 0
 --- !u!212 &3000997774934025758
 SpriteRenderer:
   serializedVersion: 2
@@ -117,7 +120,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 4334783836991956000, guid: 5813939a27ce9d74c943da90f69a632a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -321,3 +324,25 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
+--- !u!95 &3093065724729596223
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4546411265969631654}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 92734294be9f9c54c9302e271ef2bd93, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

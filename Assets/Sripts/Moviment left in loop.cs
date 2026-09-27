@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class Movimentleftinloop : MonoBehaviour
 {
-    [SerializeField] private GameObject Object;
     private Rigidbody2D RB;
     [SerializeField] public float speed = 5;
 
