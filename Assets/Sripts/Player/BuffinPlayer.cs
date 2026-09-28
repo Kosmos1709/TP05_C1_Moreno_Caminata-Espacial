@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class BuffinPlayer : MonoBehaviour
 {
-    
+    [Header("Panel End game")]
+    [SerializeField] private GameObject PanelScore;
 
     [Header ("Extralife")]
     public int ExLife ;
@@ -35,6 +36,10 @@ public class BuffinPlayer : MonoBehaviour
                 activeBuffSlow = false;
             }
         }
+        if (!PanelScore.activeSelf)
+        {
+            Time.timeScale = 1;
+        }
         
     }
 
@@ -64,6 +69,8 @@ public class BuffinPlayer : MonoBehaviour
         {
             Debug.Log("Game Over");
             Time.timeScale = 0;
+            PanelScore.SetActive(!PanelScore.activeSelf);
+            
         }
     }
     
