@@ -3747,6 +3747,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -36.982674
       objectReference: {fileID: 0}
+    - target: {fileID: 5471443867275807612, guid: 7888f0385cdbb464eacbde0ec0d547fb, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5471443867275807612, guid: 7888f0385cdbb464eacbde0ec0d547fb, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5471443867275807612, guid: 7888f0385cdbb464eacbde0ec0d547fb, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1366
+      objectReference: {fileID: 0}
+    - target: {fileID: 5471443867275807612, guid: 7888f0385cdbb464eacbde0ec0d547fb, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 768
+      objectReference: {fileID: 0}
     - target: {fileID: 5884338415266019397, guid: 7888f0385cdbb464eacbde0ec0d547fb, type: 3}
       propertyPath: m_Pivot.x
       value: 0
